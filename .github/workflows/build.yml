@@ -46,7 +46,7 @@ jobs:
       run: cmake --install ${{github.workspace}}/build --config %{{env.BUILD_TYPE}}
     
     - name: Update Doxygen Pages
-      run: mkdir ${{github.workspace}}/docs 
+      run: mkdir -p ${{github.workspace}}/docs 
            cp -rf ${{github.workspace}}/build/share/docs/html/* ${{github.workspace}}/docs/.
            git config --global user.name 'Andrew Coughtrie'
            git config --global user.email 'andrewcoughtrie@users.noreply.github.com'
