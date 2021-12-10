@@ -49,10 +49,11 @@ jobs:
       run: |
        mkdir -p ${{github.workspace}}/docs 
        cp -rf ${{github.workspace}}/build/share/docs/html/* ${{github.workspace}}/docs/.
+       ls ${{github.workspace}}/docs/
        git config --global user.name 'Andrew Coughtrie'
        git config --global user.email 'andrewcoughtrie@users.noreply.github.com' 
        git stash save "Doxygen deploy"
-       git checkout --progress --force -B gh-pages refs/remotes/origin/gh-pages
+       git checkout --progress --force -B gh-pages origin/gh-pages
        git stash pop
        git add docs/*
        git commit -m "Update Doxygen documentation"
