@@ -40,11 +40,13 @@ jobs:
        cp -rf ${{github.workspace}}/build/html/* ${{github.workspace}}/docs/.
        git config --global user.name 'Andrew Coughtrie'
        git config --global user.email 'andrewcoughtrie@users.noreply.github.com' 
-       git fetch --all
-       git add docs
+       git add --force docs
        git stash
+       git remote update
        git checkout gh-pages
-       git pull
+       git rm -rf docs
        git stash pop
+       git reset
+       git add --force docs
        git commit -m "Update Doxygen documentation"
        git push
