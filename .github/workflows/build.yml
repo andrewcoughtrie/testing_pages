@@ -41,9 +41,7 @@ jobs:
        git config --global user.name 'Andrew Coughtrie'
        git config --global user.email 'andrewcoughtrie@users.noreply.github.com' 
        git fetch --all
-       git add docs
-       git stash "Doxygen deploy"
        git checkout gh-pages
-       git stash pop
+       git add docs
        git commit -m "Update Doxygen documentation"
        git push
