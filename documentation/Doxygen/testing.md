@@ -6,6 +6,8 @@ Documentation {#mainpage}
 
 This is some test introduction to display in doxygen.
 
+Added some more text to see if things get updated properly.
+
 ## Some Code{#SC}
 
 ~~~~~~~~~~~~~~~~~~~~~~~cpp
