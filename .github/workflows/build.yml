@@ -44,6 +44,6 @@ jobs:
        git add docs
        git stash
        git checkout gh-pages
-       git pop
+       git stash pop
        git commit -m "Update Doxygen documentation"
        git push
