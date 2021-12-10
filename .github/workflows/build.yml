@@ -52,9 +52,11 @@ jobs:
        ls ${{github.workspace}}/docs/
        git config --global user.name 'Andrew Coughtrie'
        git config --global user.email 'andrewcoughtrie@users.noreply.github.com' 
+       git fetch --all
+       git add docs
        git stash save "Doxygen deploy"
        git checkout --progress --force -B gh-pages origin/gh-pages
        git stash pop
-       git add docs/*
+       git add docs
        git commit -m "Update Doxygen documentation"
        git push
