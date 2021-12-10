@@ -41,7 +41,7 @@ jobs:
        git config --global user.name 'Andrew Coughtrie'
        git config --global user.email 'andrewcoughtrie@users.noreply.github.com' 
        git fetch --all
-       git checkout gh-pages
        git add docs
+       git checkout gh-pages
        git commit -m "Update Doxygen documentation"
        git push
