@@ -44,6 +44,7 @@ jobs:
        git add docs
        git stash save "Doxygen deploy"
        git checkout gh-pages
+       rm -rf docs/*
        git stash pop
        git commit -m "Update Doxygen documentation"
        git push
