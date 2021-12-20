@@ -8,7 +8,7 @@ This is some test introduction to display in doxygen.
 
 Added some more text to see if things get updated properly.
 
-Creating some text to test the runner.
+Creating some text to test the runner. Changed some settings.
 
 ## Some Code{#SC}
 
