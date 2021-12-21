@@ -13,6 +13,10 @@ private:
 
 public:
 
+    /**
+    * @brief Constructor
+    * @param a An int
+    **/
     A(int a):a_(a){}
 
     //! @fn Function to print 
